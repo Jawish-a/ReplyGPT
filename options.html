@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ChatGPT Email Assistant Options</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Extension Settings</h1>
+
+    <label for="apiKey">OpenAI API Key:</label>
+    <input type="text" id="apiKey" />
+    <button id="saveApiKey">Save API Key</button>
+    <br /><br />
+
+    <label for="typingMode">Typing mode:</label>
+    <select id="typingMode">
+      <option value="character">Character by character</option>
+      <option value="word">Word by word</option>
+    </select>
+    <button id="saveSettings">Save Typing Mode</button>
+    <script src="options.js"></script>
+  </body>
+</html>

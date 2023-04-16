@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "ChatGPT Email Assistant",
+  "version": "1.0",
+  "description": "A Chrome extension to generate email replies using ChatGPT API.",
+  "icons": {
+    "48": "icon.png"
+  },
+  "permissions": ["activeTab", "https://www.googleapis.com/*", "storage"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://mail.google.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "options_page": "options.html"
+}
