@@ -32,7 +32,7 @@ To access the extension options, right-click the ReplyGPT icon in the Chrome too
 
 ## Credits
 
-ReplyGPT was developed by [Your Name]. The extension makes use of the ChatGPT API developed by OpenAI.
+ReplyGPT was developed by ChatGPT with my commands. The extension makes use of the ChatGPT API developed by OpenAI.
 
 ## License
 
