@@ -26,6 +26,11 @@ To use ReplyGPT, simply navigate to your Gmail inbox and open an email that you 
 
 When the generated reply is ready, it will be inserted into the reply textbox, simulating typing behavior. The speed of the typing simulation can be adjusted by selecting a different typing mode in the extension options.
 
+1.  Open Gmail and navigate to an email that you want to reply to.
+2.  Click the "Reply with ChatGPT" button next to the regular reply button.
+3.  Wait for the generated reply to appear in the reply textbox.
+4.  Edit the reply as necessary and click the "Send" button to send the email.
+
 ## Extension Options
 
 To access the extension options, right-click the ReplyGPT icon in the Chrome toolbar and select "Options". The options page allows you to configure the API key used by the ChatGPT API and the typing mode used when inserting generated replies into the reply textbox.
