@@ -30,6 +30,15 @@ When the generated reply is ready, it will be inserted into the reply textbox, s
 
 To access the extension options, right-click the ReplyGPT icon in the Chrome toolbar and select "Options". The options page allows you to configure the API key used by the ChatGPT API and the typing mode used when inserting generated replies into the reply textbox.
 
+## Configuration
+
+To configure the extension, follow these steps:
+
+1.  Click the extension icon in the Chrome toolbar.
+2.  Click the "Options" button.
+3.  Enter your OpenAI API key and select your preferred typing mode.
+4.  Click the "Save API Key" or "Save Typing Mode" button to save your changes.
+
 ## Credits
 
 ReplyGPT was developed by ChatGPT with my commands. The extension makes use of the ChatGPT API developed by OpenAI.
