@@ -1,6 +1,9 @@
-name: New Merge to Dev
+name: New Merge to main
 
 on:
+  push:
+    branches:
+      - main
   pull_request:
     types:
       - closed
@@ -15,7 +18,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      # Add your desired steps here, such as building and testing your code
-      
-      - name: Notify on new merge to dev
-        run: echo "A new merge has been made to the dev branch!"
+      - name: Check if PR was merged
+        if: github.event_name == 'pull_request'
+        run: |
+          if [[ "${{ github.event.pull_request.merged }}" == "true" ]]; then
+            echo "::set-output name=merged::true"
+          else
+            echo "::set-output name=merged::false"
+          fi
+        id: check_merged
+
+      - name: Notify on new merge to main
+        if: |
+          steps.check_merged.outputs.merged == 'true' ||
+          (github.event_name == 'push' && github.ref == 'refs/heads/main')
+        run: echo "A new merge or direct push has been made to the main branch!"
