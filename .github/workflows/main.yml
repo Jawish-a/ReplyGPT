@@ -1,0 +1,21 @@
+name: New Merge to Dev
+
+on:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Add your desired steps here, such as building and testing your code
+      
+      - name: Notify on new merge to dev
+        run: echo "A new merge has been made to the dev branch!"
